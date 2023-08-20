@@ -9,6 +9,7 @@
 - [🛠️ Features](#features)
 - [📊 Activity Diagram](#activity-diagram)
 - [🖼️ Project Screenshots](#project-screenshots)
+- [🧑‍💻 Contributors](#contributors)
 
 <!-- <h2>🚀 Demo</h2>
 
@@ -99,3 +100,8 @@
 ### 10. Flow for Admin Deletes Vaccine
 ![10. Flow for Admin Deletes Vaccine](screenshots/10_flow_for_admin_deletes_vaccine.png)
 <br />
+
+## 🧑‍💻 Contributors
+
+- Hui San: led end-to-end development with a primary focus on frontend.
+- Xin Jet: contributed to end-to-end development, primarily specializing in backend.
