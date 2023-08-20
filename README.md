@@ -28,7 +28,8 @@ This project is licensed under the [MIT License](LICENSE). -->
 
 <img src="https://res.cloudinary.com/dj90bmvon/image/upload/c_padb_auto:predominantfl_preserve_transparency/v1692502257/1_Flow_of_User_Login_and_Register_wbl5yr.jpg?_s=public-apps" alt="project-screenshot" width="400" height="400/">
 
-  
+  ![1. Flow for Getting Information about Vaccination](screenshots/1_flow_of_user_login_and_register.png)
+
   
 <h2>🧐 Features</h2>
 
