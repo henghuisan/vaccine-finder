@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".RegistrationResultActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/okie_100px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_b"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textColor="@color/card_text"
+            android:text="Registration Successful"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_age_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_ic_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_gender_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_state_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+
+                <TextView
+                    android:id="@+id/text_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_label_question"
+                    android:text=""
+                    android:fontFamily="@font/noto_reg"
+                    android:textColor="@color/card_text"
+                    android:textSize="@dimen/font_size_regular" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

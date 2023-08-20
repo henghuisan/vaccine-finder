@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ApplyVaccineActivity">
+
+    <ImageView
+        android:layout_width="147dp"
+        android:layout_height="137dp"
+        android:src="@drawable/quizlet_100px" />
+
+    <Button
+        android:id="@+id/btn_take_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:padding="16dp"
+        android:layout_below="@+id/btn_register_vaccine"
+        android:onClick="onTakeQuizClick"
+        android:text="Take Quiz"
+        android:fontFamily="@font/noto_b"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already took the quiz?"
+        android:fontFamily="@font/noto_b"
+        android:textColor="@color/card_text"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_register_vaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRegisterNowClick"
+        android:text="Register Now"
+        android:textSize="16dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/noto_b"
+        android:textColor="@color/link_color"
+     />
+</LinearLayout>

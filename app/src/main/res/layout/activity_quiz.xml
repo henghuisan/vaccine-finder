@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".QuizActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20sp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_quiz_question_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/question_padding"
+                        android:text="@string/quiz_quest_1_f"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/noto_b"
+                        android:textColor="@color/question_font_color"
+                        android:textSize="@dimen/question_font_size" />
+
+                    <RadioGroup
+                        android:id="@+id/rgb_quiz_quest_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_1_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:text="@string/answer_true_label"
+                            android:fontFamily="@font/noto_reg"
+                            android:textSize="@dimen/rbt_font_size" />
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_1_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:text="@string/answer_false_label"
+                            android:fontFamily="@font/noto_reg"
+                            android:textSize="@dimen/rbt_font_size" />
+
+                        <TextView
+                            android:id="@+id/result_quiz_quest_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_b"
+                            android:textSize="@dimen/result_font_size"
+                            android:background="@color/cardview_light_background" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20sp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_quiz_question_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/question_font_size"
+                        android:padding="@dimen/question_padding"
+                        android:text="@string/quiz_quest_2_f"
+                        android:fontFamily="@font/noto_b"
+                        android:textStyle="bold"
+                        android:textColor="@color/question_font_color"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rgb_quiz_quest_2">
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_2_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_true_label" />
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_2_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_false_label" />
+
+                        <TextView
+                            android:id="@+id/result_quiz_quest_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_b"
+                            android:textSize="@dimen/result_font_size"
+                            android:background="@color/cardview_light_background"
+                            />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_quiz_question_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/question_font_size"
+                        android:padding="@dimen/question_padding"
+                        android:text="@string/quiz_quest_3_t"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/noto_b"
+                        android:textColor="@color/question_font_color"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rgb_quiz_quest_3">
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_3_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_true_label" />
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_3_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_false_label" />
+
+                        <TextView
+                            android:id="@+id/result_quiz_quest_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_b"
+                            android:textSize="@dimen/result_font_size"
+                            android:background="@color/cardview_light_background"
+                            />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_quiz_question_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/question_font_size"
+                        android:padding="@dimen/question_padding"
+                        android:text="@string/quiz_quest_4_t"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/noto_b"
+                        android:textColor="@color/question_font_color"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rgb_quiz_quest_4">
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_4_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_true_label" />
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_4_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_false_label" />
+
+                        <TextView
+                            android:id="@+id/result_quiz_quest_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_b"
+                            android:textSize="@dimen/result_font_size"
+                            android:background="@color/cardview_light_background"
+                            />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_quiz_question_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/question_font_size"
+                        android:padding="@dimen/question_padding"
+                        android:text="@string/quiz_quest_5_f"
+                        android:fontFamily="@font/noto_b"
+                        android:textStyle="bold"
+                        android:textColor="@color/question_font_color"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rgb_quiz_quest_5">
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_5_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_true_label" />
+
+                        <RadioButton
+                            android:id="@+id/rb_quiz_quest_5_f"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/question_padding"
+                            android:textSize="@dimen/rbt_font_size"
+                            android:fontFamily="@font/noto_reg"
+                            android:text="@string/answer_false_label" />
+
+                        <TextView
+                            android:id="@+id/result_quiz_quest_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/result_font_size"
+                            android:fontFamily="@font/noto_b"
+                            android:background="@color/cardview_light_background"
+                            />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/quiz_submit"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:onClick="onSubmitClick"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

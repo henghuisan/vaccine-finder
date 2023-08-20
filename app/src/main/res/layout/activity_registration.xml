@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text=" Name"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/text_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:background="@drawable/input_background"
+                    android:ems="10"
+                    android:fontFamily="@font/noto_reg"
+                    android:inputType="textPersonName"
+                    android:padding="14dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text="Age"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_name_input" />
+
+                <EditText
+                    android:id="@+id/text_age_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:background="@drawable/input_background"
+                    android:ems="6"
+                    android:fontFamily="@font/noto_reg"
+                    android:inputType="numberSigned"
+                    android:padding="14dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text="Phone"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_age_input" />
+
+                <EditText
+                    android:id="@+id/text_phone_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:background="@drawable/input_background"
+                    android:ems="10"
+                    android:fontFamily="@font/noto_reg"
+                    android:hint="e.g 0123456789"
+                    android:inputType="phone"
+                    android:padding="14dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text="IC"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_phone_input" />
+
+
+                <EditText
+                    android:id="@+id/text_ic_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:background="@drawable/input_background"
+                    android:ems="10"
+                    android:fontFamily="@font/noto_reg"
+                    android:hint="e.g 010203012012"
+                    android:padding="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/rb_gender_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text="Gender"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_ic_input" />
+
+                <RadioGroup
+                    android:id="@+id/rbg_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rb_gender_label">
+
+                    <RadioButton
+                        android:id="@+id/rb_gender_m"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/form_input_mLeft"
+                        android:layout_marginRight="@dimen/form_input_mRight"
+                        android:fontFamily="@font/noto_reg"
+                        android:text="Male"
+                        android:textColor="@color/card_text"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_gender_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/form_input_mLeft"
+                        android:layout_marginRight="@dimen/form_input_mRight"
+                        android:fontFamily="@font/noto_reg"
+                        android:text="Female"
+                        android:textColor="@color/card_text"
+                        android:textSize="18dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mLeft"
+                    android:fontFamily="@font/noto_b"
+                    android:text="Email"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rbg_gender" />
+
+                <EditText
+                    android:id="@+id/text_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:background="@drawable/input_background"
+                    android:ems="10"
+                    android:hint="e.g abc@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="14dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mBottom"
+                    android:layout_marginTop="@dimen/form_input_mBottom"
+                    android:fontFamily="@font/noto_b"
+                    android:text="Address"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_email_input" />
+
+                <EditText
+                    android:id="@+id/text_address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:ems="10"
+                    android:fontFamily="@font/noto_reg"
+                    android:hint="Optional"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:padding="14dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+                <Spinner
+                    android:id="@+id/ddl_state"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginTop="@dimen/form_input_mTop"
+                    android:layout_marginRight="@dimen/form_input_mRight"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_address_input" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_input_mLeft"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:text="@string/term_and_condition"
+                    android:fontFamily="@font/noto_reg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ddl_state" />
+
+                <Button
+                    android:id="@+id/btn_reg_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_input_mLeft"
+                    android:layout_marginBottom="@dimen/form_input_mBottom"
+                    android:onClick="onRegistrationSubmitClick"
+                    android:text="Submit"
+                    android:fontFamily="@font/noto_b"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cb_condition" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

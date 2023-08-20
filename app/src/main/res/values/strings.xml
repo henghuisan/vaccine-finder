@@ -1,0 +1,192 @@
+<resources>
+    <!--    string in homepage-->
+    <string name="homepage_text">Homepage</string>
+    <string name="app_name">Vaccine Finder</string>
+    <string name="card_title">While you\'re waiting for vaccine, follow the 3 Ws:</string>
+    <string name="mask">wear a mask</string>
+    <string name="social_distance">social distance</string>
+    <string name="wash_hand">wash hand</string>
+    <string name="title_activity_vaccine_available">vaccine_available</string>
+    <string name="vaccine_info">Vaccine \n Info</string>
+    <string name="vaccine_available">Vaccine \n Available</string>
+    <string name="apply_now">Apply \n Now</string>
+
+    <!--    string in the vaccine info-->
+    <string name="about"><b>All You Need To Know About COVID-19 Vaccine</b></string>
+    <string name="faq0"><b>Why do you need to take vaccine?</b></string>
+    <string name="ans0">
+        Getting vaccinated is one of the most crucial steps in protecting yourself and your loved ones from COVID-19. It is also to achieve herd immunity for the greater good.
+        \n\n
+        The following shows that why it is important for you to take vaccine:\n
+        - Preventing someone from COVID-19 infection or becoming seriously ill due to COVID-19.\n
+        - Curb the spread of COVID-19 to others.\n
+        - To achieve herd immunity where a significant amount of the population is protected through vaccination against the virus, making it difficult for the disease to spread.
+        \n\n
+    </string>
+    <string name="faq1"><b>Who can take the COVID-19 vaccine?</b></string>
+    <string name="ans1">
+        All individuals 18 years of age and older.
+        \n\n
+        However, some community groups need further consideration for the acceptance of this vaccination, namely:\n
+        - Individuals with severe allergies\n
+        - COVID-19 positive individuals\n
+        - Individuals with immune system problems
+        \n\n
+        Currently, most of the clinical trials conducted are for volunteers aged 18 and over. Some vaccine companies will conduct clinical trials on children. Therefore, the government will consider the use of the COVID-19 vaccine in children when there is scientific data that proves its effectiveness and safety to this group.
+        \n\n
+        For women who are pregnant or breastfeeding, do consult with your doctor if you should be vaccinated.\n
+    </string>
+    <string name="faq2"><b>Is the vaccine safe?</b></string>
+    <string name="ans2">
+        Yes, all COVID-19 vaccines approved by the National Pharmaceutical Regulatory Division (NPRA) for use in Malaysia are safe and effective.
+        \n\n
+        NPRA is the body responsible for evaluating vaccines to be registered in Malaysia. So far, the COVID-19 vaccine for Malaysia has been given conditional approval based on strict compliance with the assessment of scientific, clinical and technical data. The Drug Control Authority (PBKD) will approve the use of the vaccine for Malaysia based on the results of the NPRA assessment.\n
+    </string>
+    <string name="faq3"><b>Can someone still get COVID-19 after vaccination?</b></string>
+    <string name="ans3">Though it’s unlikely, but some people may still spread and even develop COVID-19 after getting a vaccinated.\n</string>
+    <string name="faq4"><b>How long does it take to build immunity after getting the COVID-19 vaccine?</b></string>
+    <string name="ans4">According to CDC, it typically takes a few weeks for the body to build immunity (protection against the virus that causes COVID-19) after vaccination. This also means that it’s possible for a person to be infected with the virus just before or just after vaccination and still get sick. This is because the vaccine has not had enough time to provide protection.\n</string>
+    <string name="faq5"><b>Side effects of the COVID-19 vaccine</b></string>
+    <string name="ans5">
+        The side effects of the COVID-19 vaccine that have been reported are mild and temporary. The most commonly reported side effects are:
+        \n\n
+        - pain/swelling/redness at the injection site\n
+        - tiredness\n
+        - headache\n
+        - chills\n
+        - joint pain\n
+        - fever\n
+        - nausea\n
+        - feeling unwell\n
+        - swelling of the lymph nodes\n
+        - other side effects that may be reported from time to time\n
+    </string>
+
+    <!--    string in the selected vaccine-->
+    <string name="vaccine1"><b>Pfizer-BioNTech, USA</b></string>
+    <string name="vaccine2"><b>AstraZeneca/Oxford University, UK/Sweden</b></string>
+    <string name="vaccine3"><b>Gamaleya (Sputnik V), Russia</b></string>
+    <string name="vaccine4"><b>ModernaTX Inc, USA</b></string>
+    <string name="vaccine5"><b>Sinovac (CoronaVac), China</b></string>
+    <string name="fizer_desc">
+        Efficacy:\n94-95% effective at preventing symptomatic COVID-19 infection according to preliminary Phase III results
+        \n\n
+        Number of shots: \n2 intramuscular shots in the upper arm, three weeks (21 days) apart for people aged 16 or older. The need for and/or timing of booster shots has not been established yet.
+        \n\n
+        Potential side effects: \nPain at injection site, fatigue, headache, muscle pain, chills, joint pain, fever, injection site swelling, injection site redness, nausea, malaise (general discomfort), and lymphadenopathy (swollen lymph nodes).
+        \n\n
+        Pros: Highly effective
+        \n\n
+        Cons: Expensive, difficult to store
+        \n\n
+        For more information about Pfizer-BioNTech \n
+    </string>
+    <string name="fizer_url">https://www.cvdvaccine.com/</string>
+    <string name="sinovac_desc">
+        Efficacy: \nNot yet known (only data from Phase I and Phase II trials are publicly available—no peer-reviewed Phase III trial data yet). Estimated to be anywhere between 50-90% effective, based on trials in Brazil, Turkey and Indonesia.
+        \n\n
+        Number of shots: \nTwo intramuscular injections in the upper arm, with the second dose administered 14-28 days after the initial dose. The need for and/or timing of booster shots has not been established yet.
+        \n\n
+        Potential side effects: \nPain, swelling, itchiness, redness, induration, headache, fatigue, muscle pain, nausea, diarrhoea, joint pain, cough, chills, loss of appetite, runny or blocked nose, and abdominal pain. In less common or rarer cases, you may experience fever, tremors, flushing, swelling, dizziness, drowsiness, vomiting, hypersensitivity, abnormal skin, constipation, and hiccups. For the full list of side effects, click here.
+        \n\n
+        For more information about Sinovac \n
+    </string>
+    <string name="sinovac_url">https://www.who.int/news-room/feature-stories/detail/the-sinovac-covid-19-vaccine-what-you-need-to-know</string>
+    <string name="az_desc">
+        Efficacy: \n62-90% effective at preventing symptomatic COVID-19 infection according to preliminary Phase III results (peer-reviewed).
+        \n\n
+        Number of shots: \n2 intramuscular shots in the upper arm for people aged 18 or older. The need for and/or timing of booster shots has not been established yet
+        \n\n
+        Potential side effects: \nInjection-site pain, tenderness, warmth, redness, swelling, induration, itch, malaise, muscle ache, joint pain, fatigue, nausea, headache, chills, and blood clots. NOTE: Younger people and women more likely to experience side effects.
+        \n\n
+        Pros: \nFree, easier to store (can be kept at refrigerator temperature for up to six months), AstraZeneca have signed a no-profit pledge, the data is being collected from a diverse range of geographic and racial groups.
+        \n\n
+        Cons: \nComparatively low efficacy. Further, the vaccine has become controversial after a link with an exceedingly rare but life-threatening blood clot was established (heparin-induced thrombocytopenia).
+        \n\n
+        For more information about AstraZeneca \n
+    </string>
+    <string name="az_url">https://www.who.int/news-room/feature-stories/detail/the-oxford-astrazeneca-covid-19-vaccine-what-you-need-to-know?gclid=CjwKCAjwq7aGBhADEiwA6uGZp9EaEZjTFHfx2tkhCp_b-6bRVA6KavlcBiKxRYy9-_o1iaG0C4FsaxoClNcQAvD_BwE</string>
+    <string name="moderna_desc">
+        Efficacy: \n94.1% effective at preventing symptomatic COVID-19 infection according to preliminary Phase III results (peer-reviewed)
+        \n\n
+        Number of shots: \n2 intramuscular shots in the muscle of the upper arm, one month (28 days) apart for people aged 18 or older. The need for and/or timing of booster shots has not been established yet
+        \n\n
+        Potential side effects: \nPain, swelling, and redness at the injection site, tiredness, headache, muscle pain, chills, joint pain, swollen lymph nodes in the same arm as the injection, nausea and vomiting, and fever. More people experienced side effects after the second dose than the first.
+        \n\n
+        Pros: Effective
+        \n\n
+        Cons: Expensive, difficult to store
+        \n\n
+        For more information about ModernaTX Inc \n
+    </string>
+    <string name="moderna_url">https://www.who.int/news-room/feature-stories/detail/the-moderna-covid-19-mrna-1273-vaccine-what-you-need-to-know?gclid=CjwKCAjwq7aGBhADEiwA6uGZp3EjO4bBedHxCEvZpUhS4_p_KGrTDq_l7EiUfzppaCLhGgQqolfmmRoCpa4QAvD_BwE</string>
+    <string name="gamaleya_desc">
+        Efficacy: \nEstimated to be 91.6% effective, according to an interim analysis of a Phase III trial (peer-reviewed).
+        \n\n
+        Number of shots: \nTwo doses, with the second dose administered 21 days after the first dose. NOTE: The vaccine has begun trials of a single-dose version of the vaccine, called "Sputnik Light".
+        \n\n
+        Potential side effects: \nFlu-like illness, injection site reactions, headache, and weakness (not suly established yet).
+        \n\n
+        For more information about Gamaleya (Sputnik V)\n
+    </string>
+    <string name="gamaleya_url">https://en.wikipedia.org/wiki/Sputnik_V_COVID-19_vaccine</string>
+    <string name="vaccine_name">vaccine name</string>
+    <string name="description">description</string>
+    <string name="click_here">click here</string>
+    <string name="vaccine_available_title">Vaccine Available</string>
+    <string name="vaccine_info_title">All You Need To Know About Vaccine</string>
+
+    <!-- Registration-->
+    <string name="reg_quest_label">Registration Form</string>
+    <string name="reg_result_label">You are done!</string>
+    <string name="text_name_label">Name:</string>
+    <string name="text_age_label">Age:</string>
+    <string name="text_gender_label">Gender</string>
+    <string name="rb_gender_input_m">Male</string>
+    <string name="rb_gender_input_f">Female</string>
+    <string name="text_phone_label">Phone Num:</string>
+    <string-array name="states">
+        <item>State</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Pulau Pinang</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+        <item>Kuala Lumpur</item>
+        <item>Labuan</item>
+        <item>Sabah</item>
+        <item>Putrajaya</item>
+    </string-array>
+
+
+    <!-- Validation Error-->
+    <string name="input_empty_error">Field is mandatory</string>
+    <string name="input_invalid_error">Invalid input</string>
+    <string name="input_format_error">Wrong input format</string>
+    <string name="term_and_condition">agree with the term and condition</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+
+    <!-- Quiz -->
+    <string name="quiz_about_label">About Quiz</string>
+    <string name="quiz_quest_label">Quiz</string>
+    <string name="quiz_start">Start</string>
+    <string name="quiz_submit">Submit</string>
+    <string name="quiz_desc">The quiz contains five true/false questions. \nYou need to answer all questions correctly to get the permission for vaccination registration.</string>
+    <string name="quiz_button">Quiz</string>
+    <string name="quiz_quest_1_f">1. COVID-19 vaccines cause severe side effects.</string>
+    <string name="quiz_quest_2_f">2. COVID-19 vaccines contain a microchip to track the population.</string>
+    <string name="quiz_quest_3_t">3. COVID-19 vaccines DO NOT cause infertility.</string>
+    <string name="quiz_quest_4_t">4. You have to wait two weeks after the second dose to receive optimal protection from the coronavirus vaccine.</string>
+    <string name="quiz_quest_5_f">5. Loss of smell is side effect of the COVID-19 vaccine?</string>
+    <string name="answer_true_label">True</string>
+    <string name="answer_false_label">False</string>
+    <string name="quiz_result_correct_message">Correct!</string>
+    <string name="quiz_result_wrong_message">Wrong!</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/header_color"
+    tools:context=".VaccineAvailableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/vaccine_available_title"
+            android:src="@drawable/vaccine_type_100px" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_reg"
+            android:textAlignment="center"
+            android:text="@string/vaccine_available_title"
+            android:textColor="@color/app_name"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="16sp"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3"
+            app:layout_constraintTop_toBottomOf="@+id/app_name">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_marginTop="40dp"
+                app:cardBackgroundColor="@color/vaccine_card_background"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/vac1"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:onClick="showVaccine"
+                    android:contentDescription="@string/vaccine1"
+                    android:src="@drawable/fizer" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_marginTop="40dp"
+                app:cardBackgroundColor="@color/vaccine_card_background"
+                app:cardCornerRadius="15dp">
+                    <ImageView
+                        android:id="@+id/vac2"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:onClick="showVaccine"
+                        android:contentDescription="@string/vaccine2"
+                        android:src="@drawable/az" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/vaccine_card_background"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                        android:id="@+id/vac3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:onClick="showVaccine"
+                        android:contentDescription="@string/ans3"
+                        android:src="@drawable/gamaleya" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/vaccine_card_background"
+                app:cardCornerRadius="15dp">
+                <ImageView
+                        android:id="@+id/vac4"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:onClick="showVaccine"
+                        android:contentDescription="@string/vaccine4"
+                        android:src="@drawable/moderna" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="@color/vaccine_card_background"
+                app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/vac5"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:onClick="showVaccine"
+                        android:contentDescription="@string/vaccine5"
+                        android:src="@drawable/sinovac" />
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

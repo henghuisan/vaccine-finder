@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment2">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".VaccineAvailableActivity"
+            android:label="Vacciene Type"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".VaccineSelectedActivity"
+            android:label=""
+            android:parentActivityName=".VaccineAvailableActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".VaccineInfoActivity"
+            android:label="Vacciene Info"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+
+        <activity android:name=".ApplyVaccineActivity"
+            android:label="Apply Vaccine"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity android:name=".QuizActivity"
+            android:label="Quiz"
+            android:parentActivityName=".ApplyVaccineActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ApplyVaccineActivity" />
+        </activity>
+        <activity android:name=".RegistrationActivity"
+            android:label="Register Form"
+            android:parentActivityName=".ApplyVaccineActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ApplyVaccineActivity" />
+        </activity>
+        <activity android:name=".RegistrationResultActivity"
+            android:label="Congratulations!"
+            android:parentActivityName=".ApplyVaccineActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ApplyVaccineActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

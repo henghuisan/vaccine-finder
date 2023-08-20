@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="question_font_size">16sp</dimen>
+    <dimen name="question_padding">5sp</dimen>
+    <dimen name="rbt_font_size">14sp</dimen>
+    <dimen name="margin_label_question">16dp</dimen>
+    <dimen name="font_size_regular">18sp</dimen>
+    <dimen name="result_font_size">14sp</dimen>
+    <dimen name="info_card_mTop">32dp</dimen>
+    <dimen name="info_card_mStart">20dp</dimen>
+    <dimen name="info_card_mEnd">20dp</dimen>
+    <dimen name="info_card_mBottom">50dp</dimen>
+    <dimen name="info_card_radius">15sp</dimen>
+    <dimen name="form_input_mLeft">24dp</dimen>
+    <dimen name="form_input_mRight">24dp</dimen>
+    <dimen name="form_input_mBottom">32dp</dimen>
+    <dimen name="form_input_mTop">8dp</dimen>
+    <dimen name="info_margin">24dp</dimen>
+</resources>

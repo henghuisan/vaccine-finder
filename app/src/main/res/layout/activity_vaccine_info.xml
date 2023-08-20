@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        tools:context=".VaccineInfoActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="@color/header_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/vaccine_info_title"
+                    android:src="@drawable/info_logo_100px"/>
+
+                <TextView
+                    android:id="@+id/vaccine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textAlignment="center"
+                    android:text="@string/vaccine_info_title"
+                    android:fontFamily="@font/noto_b"
+                    android:textSize="28sp"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="32dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView0"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/info_card_mTop"
+            android:layout_marginStart="@dimen/info_card_mStart"
+            android:layout_marginEnd="@dimen/info_card_mEnd"
+            app:cardCornerRadius="@dimen/info_card_radius"
+            app:layout_constraintBottom_toTopOf="@+id/cardView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/question0"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/info_margin"
+                    android:fontFamily="@font/noto_b"
+                    android:paddingBottom="16dp"
+                    android:text="@string/faq0"
+                    app:layout_constraintBottom_toTopOf="@+id/expandableView0"
+                    app:layout_constraintEnd_toStartOf="@+id/arrowBtn0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/arrowBtn0"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/info_margin"
+                    android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:onClick="showAnswer0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandableView0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question0">
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/ans0"
+                        android:fontFamily="@font/noto_reg"
+                        android:textColor="#000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_card_mTop"
+                android:layout_marginStart="@dimen/info_card_mStart"
+                android:layout_marginEnd="@dimen/info_card_mEnd"
+                app:cardCornerRadius="@dimen/info_card_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/info_margin"
+                        android:paddingBottom="16dp"
+                        android:text="@string/faq1"
+                        android:fontFamily="@font/noto_b"
+                        app:layout_constraintEnd_toStartOf="@+id/arrowBtn1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/arrowBtn1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/info_margin"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:onClick="showAnswer1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/expandableView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/question1">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/ans1"
+                            android:textColor="#000"
+                            android:fontFamily="@font/noto_reg"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_card_mTop"
+                android:layout_marginStart="@dimen/info_card_mStart"
+                android:layout_marginEnd="@dimen/info_card_mEnd"
+                app:cardCornerRadius="@dimen/info_card_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/question2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/info_margin"
+                        android:paddingBottom="16dp"
+                        android:text="@string/faq2"
+                        android:fontFamily="@font/noto_b"
+                        app:layout_constraintEnd_toStartOf="@+id/arrowBtn2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/arrowBtn2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/info_margin"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:onClick="showAnswer2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/expandableView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/question2">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/ans2"
+                            android:textColor="#000"
+                            android:fontFamily="@font/noto_reg"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_card_mTop"
+                android:layout_marginStart="@dimen/info_card_mStart"
+                android:layout_marginEnd="@dimen/info_card_mEnd"
+                app:cardCornerRadius="@dimen/info_card_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/question3"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/info_margin"
+                        android:paddingBottom="16dp"
+                        android:text="@string/faq3"
+                        android:fontFamily="@font/noto_b"
+                        app:layout_constraintEnd_toStartOf="@+id/arrowBtn3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/arrowBtn3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/info_margin"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:onClick="showAnswer3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/expandableView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/question3">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/ans3"
+                            android:textColor="#000"
+                            android:fontFamily="@font/noto_reg"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_card_mTop"
+                android:layout_marginStart="@dimen/info_card_mStart"
+                android:layout_marginEnd="@dimen/info_card_mEnd"
+                app:cardCornerRadius="@dimen/info_card_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/question4"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/info_margin"
+                        android:paddingBottom="16dp"
+                        android:text="@string/faq4"
+                        android:fontFamily="@font/noto_b"
+                        app:layout_constraintEnd_toStartOf="@+id/arrowBtn4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/arrowBtn4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/info_margin"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        android:onClick="showAnswer4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/expandableView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/question4">
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/ans4"
+                            android:textColor="#000"
+                            android:fontFamily="@font/noto_reg"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/info_card_mTop"
+                android:layout_marginStart="@dimen/info_card_mStart"
+                android:layout_marginEnd="@dimen/info_card_mEnd"
+                android:layout_marginBottom="@dimen/info_card_mBottom"
+                app:cardCornerRadius="@dimen/info_card_radius"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/question5"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/info_margin"
+                    android:paddingBottom="16dp"
+                    android:text="@string/faq5"
+                    android:fontFamily="@font/noto_b"
+                    app:layout_constraintEnd_toStartOf="@+id/arrowBtn5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/arrowBtn5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/info_margin"
+                    android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:onClick="showAnswer5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expandableView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question5">
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/ans5"
+                        android:textColor="#000"
+                        android:fontFamily="@font/noto_reg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
